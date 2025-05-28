@@ -1,9 +1,18 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import { Layout } from './components/Layout';
+import { Home } from './pages/Home';
+import { Project } from './pages/Project';
 
 function App() {
   return (
     <>
-      <h1>Vite + React</h1>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="project/:id" element={<Project />} />
+        </Route>
+      </Routes>
     </>
   );
 }
