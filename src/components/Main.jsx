@@ -20,9 +20,9 @@ export function Main() {
         </h2>
       </div>
       <div className="flex items-center justify-between absolute bottom-6 left-4 right-4 lg:left-12 lg:right-12">
-        <h3 className="font-medium w-fit flex items-center gap-1.5">
+        <h3 className="font-medium w-fit flex items-center gap-1.5 lg:text-2xl lg:gap-2">
           Open to work
-          <SentimentSatisfiedAltOutlinedIcon className="!w-6" />
+          <SentimentSatisfiedAltOutlinedIcon className="!w-6 !h-6 lg:!w-7 lg:!h-7" />
         </h3>
         <img
           src="scrollDown.png"
