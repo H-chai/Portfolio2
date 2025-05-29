@@ -7,14 +7,24 @@
   --color-light-green: #e7f2dc;
   --color-yellow: #eef48c;
   --color-transparent-green: rgba(27, 75, 56, 0.5);
+
+  --animate-rotation: rotation 12s infinite linear;
+
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 }
 
-/* index.css または globals.css に追加 */
 .text-slide {
   color: transparent;
   text-shadow:
-    0 calc(var(--hover-offset-y, 0em) * -1) 0 #000,
-    0 calc(1.5em - var(--hover-offset-y, 0em)) 0 #000;
+    0 calc(var(--hover-offset-y, 0em) * -1) 0 #1b4b38,
+    0 calc(1.5em - var(--hover-offset-y, 0em)) 0 #1b4b38;
   transition: text-shadow 0.3s ease-in-out;
 }
 
