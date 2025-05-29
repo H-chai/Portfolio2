@@ -11,8 +11,8 @@ export function Header() {
   const showMenuIcon = isMobile && !isMenuOpen;
 
   return (
-    <header className='flex justify-between items-center px-4 py-6 font-clash text-dark-green bg-light-green lg:px-20 lg-py-10'>
-      <Link className='relative z-30 font-medium text-lg'>HØ</Link>
+    <header className="flex justify-between items-center px-4 py-6 font-clash text-dark-green bg-light-green lg:px-20 lg-py-10">
+      <Link className="relative z-30 font-medium text-lg">HØ</Link>
 
       {isMobile && (
         <nav
@@ -30,22 +30,32 @@ export function Header() {
       )}
 
       {showCloseIcon && (
-        <button onClick={toggleMenuButton} className="relative z-30 flex items-center">
+        <button
+          onClick={toggleMenuButton}
+          className="relative z-30 flex items-center"
+        >
           <CloseOutlinedIcon />
         </button>
       )}
 
       {showMenuIcon && (
-        <button onClick={toggleMenuButton} className="relative z-30 flex items-center">
+        <button
+          onClick={toggleMenuButton}
+          className="relative z-30 flex items-center"
+        >
           <MenuOutlinedIcon />
         </button>
       )}
 
       {!isMobile && (
         <nav>
-          <ul className='flex items-center gap-10 font-medium text-lg'>
-            <li>PROJECTS</li>
-            <li>CONTACT</li>
+          <ul className="flex items-center gap-10 font-medium text-lg uppercase">
+            <li className="overflow-hidden cursor-pointer group">
+              <span className="block text-slide">projects</span>
+            </li>
+            <li className="overflow-hidden cursor-pointer group">
+              <span className="block text-slide">contact</span>
+            </li>
           </ul>
         </nav>
       )}
