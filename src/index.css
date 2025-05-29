@@ -1,3 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --font-clash: 'Clash Display', sans-serif;
+
+  --color-dark-green: #1B4B38;
+  --color-light-green: #E7F2DC;
+  --color-yellow: #EEF48C;
+}
