@@ -4,7 +4,7 @@ import ArrowOutwardOutlinedIcon from '@mui/icons-material/ArrowOutwardOutlined';
 export function Footer() {
   const isMobile = useMediaQuery('(max-width: 1023px)');
   return (
-    <footer className="bg-light-green font-clash text-dark-green px-4 py-4">
+    <footer className="bg-light-green font-clash text-dark-green px-4 py-4 lg:px-16">
       <div className="grid grid-cols-2 gap-4 mb-16">
         <div className="uppercase ">
           <h3 className="font-medium pb-4 border-b-1 border-transparent-green mb-4">
