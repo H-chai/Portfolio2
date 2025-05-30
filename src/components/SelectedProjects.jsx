@@ -2,11 +2,11 @@ import ArrowOutwardOutlinedIcon from '@mui/icons-material/ArrowOutwardOutlined';
 
 export function SelectedProjects() {
   return (
-    <div className="bg-light-green px-4 font-clash pt-24 lg:px-16">
+    <div className="bg-light-green px-4 pb-20 font-clash pt-24 lg:px-16">
       <h2 className="text-dark-green text-lg uppercase font-medium mb-8">
         Selected Projects
       </h2>
-      <div className="flex flex-col gap-6 pb-12 sm:grid sm:grid-cols-2 sm:gap-4 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="flex flex-col gap-6 sm:grid sm:grid-cols-2 sm:gap-4 lg:grid-cols-3 xl:grid-cols-4">
         <div className="px-6 pt-6 pb-24 bg-dark-green rounded-2xl relative">
           <img src="holidaze.png" alt="holidaze thumbnail" />
           <div className="mt-2 text-light-green">
