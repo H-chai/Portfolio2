@@ -62,11 +62,23 @@ export function Footer() {
           <nav>
             <ul className="text-sm flex flex-col gap-2">
               <li className="flex items-center overflow-hidden cursor-pointer group w-fit">
-                <span className="block text-slide">LinkedIn</span>
+                <Link
+                  to="https://www.linkedin.com/in/hikari-%C3%B8verby-957493241/"
+                  target="_blank"
+                  className="block text-slide"
+                >
+                  LinkedIn
+                </Link>
                 <ArrowOutwardOutlinedIcon className="!w-4 ml-1.5" />
               </li>
               <li className="flex items-center overflow-hidden cursor-pointer group w-fit">
-                <span className="block text-slide">Github</span>
+                <Link
+                  to="https://github.com/H-chai"
+                  target="_blank"
+                  className="block text-slide"
+                >
+                  Github
+                </Link>
                 <ArrowOutwardOutlinedIcon className="!w-4 ml-1.5" />
               </li>
             </ul>
