@@ -1,13 +1,17 @@
-import { useMediaQuery } from '@mui/material';
 import ArrowOutwardOutlinedIcon from '@mui/icons-material/ArrowOutwardOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import { Link } from 'react-router-dom';
+import { useScroll } from '../contexts/ScrollToContext';
 
 export function Footer() {
-  const isMobile = useMediaQuery('(max-width: 1023px)');
+  const { contactSectionRef } = useScroll();
+
   return (
     <footer className="bg-light-green font-clash text-dark-green px-4 pt-16 lg:px-16 lg:pt-28">
-      <div className="text-dark-green bg-light-green font-clash pb-12 sm:pb-16 lg:pb-20">
+      <div
+        ref={contactSectionRef}
+        className="text-dark-green bg-light-green font-clash pb-12 sm:pb-16 lg:pb-20"
+      >
         <Link
           to="mailto:overby.hikari@gmail.com"
           className="flex items-center justify-between bg-yellow rounded-full cursor-pointer group mx-auto w-fit px-4 py-2 gap-2 sm:px-6 sm:gap-3 lg:px-10 lg:gap-6 lg:py-0"
@@ -31,10 +35,22 @@ export function Footer() {
           <nav>
             <ul className="text-sm flex flex-col gap-2">
               <li className="overflow-hidden cursor-pointer group w-fit">
-                <span className="block text-slide">projects</span>
+                <Link
+                  to="/"
+                  state={{ scrollTo: 'projects' }}
+                  className="block text-slide"
+                >
+                  projects
+                </Link>
               </li>
               <li className="overflow-hidden cursor-pointer group w-fit">
-                <span className="block text-slide">contact</span>
+                <Link
+                  to="/"
+                  state={{ scrollTo: 'contact' }}
+                  className="block text-slide"
+                >
+                  contact
+                </Link>
               </li>
             </ul>
           </nav>
@@ -46,11 +62,23 @@ export function Footer() {
           <nav>
             <ul className="text-sm flex flex-col gap-2">
               <li className="flex items-center overflow-hidden cursor-pointer group w-fit">
-                <span className="block text-slide">LinkedIn</span>
+                <Link
+                  to="https://www.linkedin.com/in/hikari-%C3%B8verby-957493241/"
+                  target="_blank"
+                  className="block text-slide"
+                >
+                  LinkedIn
+                </Link>
                 <ArrowOutwardOutlinedIcon className="!w-4 ml-1.5" />
               </li>
               <li className="flex items-center overflow-hidden cursor-pointer group w-fit">
-                <span className="block text-slide">Github</span>
+                <Link
+                  to="https://github.com/H-chai"
+                  target="_blank"
+                  className="block text-slide"
+                >
+                  Github
+                </Link>
                 <ArrowOutwardOutlinedIcon className="!w-4 ml-1.5" />
               </li>
             </ul>

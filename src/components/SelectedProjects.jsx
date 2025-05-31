@@ -1,9 +1,15 @@
 import ArrowOutwardOutlinedIcon from '@mui/icons-material/ArrowOutwardOutlined';
 import { Link } from 'react-router-dom';
+import { useScroll } from '../contexts/ScrollToContext';
 
 export function SelectedProjects() {
+  const { projectSectionRef } = useScroll();
+
   return (
-    <div className="bg-light-green px-4 pb-20 font-clash pt-24 lg:px-16">
+    <div
+      ref={projectSectionRef}
+      className="bg-light-green px-4 pb-20 font-clash pt-24 lg:px-16"
+    >
       <h2 className="text-dark-green text-lg uppercase font-medium mb-8">
         Selected Projects
       </h2>
