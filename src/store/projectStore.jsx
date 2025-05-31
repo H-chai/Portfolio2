@@ -71,10 +71,6 @@ export const useStore = create((set, get) => ({
           alt: 'CrediBid listing page',
         },
         {
-          url: '/CrediBid-profile.jpg',
-          alt: 'CrediBid profile page',
-        },
-        {
           url: '/CrediBid-listing-responsive.jpg',
           alt: 'CrediBid mobile listing page',
         },
@@ -106,10 +102,6 @@ export const useStore = create((set, get) => ({
         {
           url: '/eCom-product.jpg',
           alt: 'eCom product page',
-        },
-        {
-          url: '/eCom-cart.jpg',
-          alt: 'eCom cart page',
         },
         {
           url: '/eCom-product-responsive.jpg',

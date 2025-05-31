@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 export function Footer() {
   const isMobile = useMediaQuery('(max-width: 1023px)');
   return (
-    <footer className="bg-light-green font-clash text-dark-green px-4 pt-4 lg:px-16">
-      <div className="text-dark-green bg-light-green font-clash pt-4 pb-12 sm:pb-16 lg:pb-20">
+    <footer className="bg-light-green font-clash text-dark-green px-4 pt-16 lg:px-16">
+      <div className="text-dark-green bg-light-green font-clash pb-12 sm:pb-16 lg:pb-20">
         <Link
           to="mailto:overby.hikari@gmail.com"
           className="flex items-center justify-between bg-yellow rounded-full cursor-pointer group mx-auto w-fit px-4 py-2 gap-2 sm:px-6 sm:gap-3 lg:px-10 lg:gap-6"
