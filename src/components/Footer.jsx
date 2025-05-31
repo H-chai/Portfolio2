@@ -35,10 +35,22 @@ export function Footer() {
           <nav>
             <ul className="text-sm flex flex-col gap-2">
               <li className="overflow-hidden cursor-pointer group w-fit">
-                <span className="block text-slide">projects</span>
+                <Link
+                  to="/"
+                  state={{ scrollTo: 'projects' }}
+                  className="block text-slide"
+                >
+                  projects
+                </Link>
               </li>
               <li className="overflow-hidden cursor-pointer group w-fit">
-                <span className="block text-slide">contact</span>
+                <Link
+                  to="/"
+                  state={{ scrollTo: 'contact' }}
+                  className="block text-slide"
+                >
+                  contact
+                </Link>
               </li>
             </ul>
           </nav>
