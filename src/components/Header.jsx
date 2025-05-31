@@ -12,7 +12,9 @@ export function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 flex justify-between items-center px-4 py-6 font-clash text-dark-green z-10 lg:px-16 lg:py-10">
-      <Link className="relative z-30 font-medium text-lg">HØ</Link>
+      <Link to="/" className="relative z-30 font-medium text-lg">
+        HØ
+      </Link>
 
       {isMobile && (
         <nav

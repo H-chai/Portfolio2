@@ -1,4 +1,5 @@
 import ArrowOutwardOutlinedIcon from '@mui/icons-material/ArrowOutwardOutlined';
+import { Link } from 'react-router-dom';
 
 export function SelectedProjects() {
   return (
@@ -7,7 +8,10 @@ export function SelectedProjects() {
         Selected Projects
       </h2>
       <div className="flex flex-col gap-6 sm:grid sm:grid-cols-2 sm:gap-4 lg:grid-cols-3 xl:grid-cols-4">
-        <div className="px-6 pt-6 pb-24 bg-dark-green rounded-2xl relative">
+        <Link
+          to="/project/1"
+          className="px-6 pt-6 pb-24 bg-dark-green rounded-2xl relative group"
+        >
           <img src="holidaze.png" alt="holidaze thumbnail" />
           <div className="mt-2 text-light-green">
             <p className="text-sm">Design/Development</p>
@@ -17,7 +21,10 @@ export function SelectedProjects() {
               can explore, book, and manage holiday stays.
             </p>
           </div>
-          <button className="bg-yellow flex items-center pl-4 pr-1.5 py-1.5 gap-1.5 rounded-full cursor-pointer group w-fit ml-auto absolute bottom-6 right-6">
+          <button
+            to="/project/1"
+            className="bg-yellow flex items-center pl-4 pr-1.5 py-1.5 gap-1.5 rounded-full cursor-pointer w-fit ml-auto absolute bottom-6 right-6"
+          >
             <span className="overflow-hidden">
               <span className="text-dark-green font-medium block text-slide">
                 View
@@ -27,8 +34,11 @@ export function SelectedProjects() {
               <ArrowOutwardOutlinedIcon className="text-yellow !w-5 !h-5" />
             </span>
           </button>
-        </div>
-        <div className="px-6 pt-6 pb-24 bg-dark-green rounded-2xl relative">
+        </Link>
+        <Link
+          to="/project/2"
+          className="px-6 pt-6 pb-24 bg-dark-green rounded-2xl relative group"
+        >
           <img src="CrediBid.png" alt="CrediBid thumbnail" />
           <div className="mt-2 text-light-green">
             <p className="text-sm">Design/Development</p>
@@ -38,7 +48,7 @@ export function SelectedProjects() {
               get 1000 credits. Only registered users can place bids.
             </p>
           </div>
-          <button className="bg-yellow flex items-center pl-4 pr-1.5 py-1.5 gap-1.5 rounded-full cursor-pointer group w-fit ml-auto absolute bottom-6 right-6">
+          <button className="bg-yellow flex items-center pl-4 pr-1.5 py-1.5 gap-1.5 rounded-full cursor-pointer w-fit ml-auto absolute bottom-6 right-6">
             <span className="overflow-hidden">
               <span className="text-dark-green font-medium block text-slide">
                 View
@@ -48,8 +58,11 @@ export function SelectedProjects() {
               <ArrowOutwardOutlinedIcon className="text-yellow !w-5 !h-5" />
             </span>
           </button>
-        </div>
-        <div className="px-6 pt-6 pb-24 bg-dark-green rounded-2xl relative">
+        </Link>
+        <Link
+          to="/project/3"
+          className="px-6 pt-6 pb-24 bg-dark-green rounded-2xl relative group"
+        >
           <img src="eCom.png" alt="eCom thumbnail" />
           <div className="mt-2 text-light-green">
             <p className="text-sm">Design/Development</p>
@@ -59,7 +72,7 @@ export function SelectedProjects() {
               add to cart, checkout, and contact via a validated form.
             </p>
           </div>
-          <button className="bg-yellow flex items-center pl-4 pr-1.5 py-1.5 gap-1.5 rounded-full cursor-pointer group w-fit ml-auto absolute bottom-6 right-6">
+          <button className="bg-yellow flex items-center pl-4 pr-1.5 py-1.5 gap-1.5 rounded-full cursor-pointer w-fit ml-auto absolute bottom-6 right-6">
             <span className="overflow-hidden">
               <span className="text-dark-green font-medium block text-slide">
                 View
@@ -69,7 +82,7 @@ export function SelectedProjects() {
               <ArrowOutwardOutlinedIcon className="text-yellow !w-5 !h-5" />
             </span>
           </button>
-        </div>
+        </Link>
       </div>
     </div>
   );
