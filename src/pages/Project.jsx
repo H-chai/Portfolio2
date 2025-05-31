@@ -3,7 +3,7 @@ import { useStore } from '../store/projectStore';
 import ArrowOutwardOutlinedIcon from '@mui/icons-material/ArrowOutwardOutlined';
 import KeyboardBackspaceOutlinedIcon from '@mui/icons-material/KeyboardBackspaceOutlined';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import ShareOutlinedIcon from '@mui/icons-material/ShareOutlined';
+import { CopyCurrentPageURL } from '../utils/CopyCurrentPageURL';
 
 export function Project() {
   const { id } = useParams();
@@ -27,7 +27,7 @@ export function Project() {
           </p>
         ))}
       </div>
-      <ul>
+      <ul className="grid grid-col-auto gap-1.5">
         <li>
           <Link
             to={project.url}
@@ -35,7 +35,9 @@ export function Project() {
             className="bg-yellow flex items-center w-fit rounded-full pl-3 pr-1.5 py-1 gap-1.5 group"
           >
             <span className="overflow-hidden">
-              <span className="text-slide">Go to website</span>
+              <span className="text-slide whitespace-nowrap">
+                Go to website
+              </span>
             </span>
             <span className="w-6 h-6 bg-dark-green flex items-center justify-center rounded-full text-slide">
               <ArrowOutwardOutlinedIcon className="text-yellow !w-4 !h-4" />
@@ -49,27 +51,14 @@ export function Project() {
             className="bg-yellow flex items-center w-fit rounded-full pl-3 pr-1.5 py-1 gap-1.5 group"
           >
             <span className="overflow-hidden">
-              <span className="text-slide">Github</span>
+              <span className="text-slide whitespace-nowrap">Github</span>
             </span>
             <span className="w-6 h-6 bg-dark-green flex items-center justify-center rounded-full">
               <GitHubIcon className="text-yellow !w-4 !h-4" />
             </span>
           </Link>
         </li>
-        <li>
-          <Link
-            to={project.github}
-            target="_blank"
-            className="bg-yellow flex items-center w-fit rounded-full pl-3 pr-1.5 py-1 gap-1.5 group"
-          >
-            <span className="overflow-hidden">
-              <span className="text-slide">Share</span>
-            </span>
-            <span className="w-6 h-6 bg-dark-green flex items-center justify-center rounded-full">
-              <ShareOutlinedIcon className="text-yellow !w-4 !h-4 -ml-0.5" />
-            </span>
-          </Link>
-        </li>
+        <CopyCurrentPageURL />
       </ul>
 
       <ul className="flex flex-col gap-8">
