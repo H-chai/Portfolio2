@@ -25,8 +25,24 @@ export function Header() {
           `}
         >
           <ul className="flex flex-col justify-center items-center gap-10 font-medium text-2xl">
-            <li>PROJECTS</li>
-            <li>CONTACT</li>
+            <li>
+              <Link
+                to="/"
+                state={{ scrollTo: 'projects' }}
+                onClick={toggleMenuButton}
+              >
+                PROJECTS
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/"
+                state={{ scrollTo: 'contact' }}
+                onClick={toggleMenuButton}
+              >
+                CONTACT
+              </Link>
+            </li>
           </ul>
         </nav>
       )}
@@ -53,10 +69,22 @@ export function Header() {
         <nav>
           <ul className="flex items-center gap-10 font-medium text-lg uppercase">
             <li className="overflow-hidden cursor-pointer group">
-              <span className="block text-slide">projects</span>
+              <Link
+                to="/"
+                state={{ scrollTo: 'projects' }}
+                className="block text-slide"
+              >
+                projects
+              </Link>
             </li>
             <li className="overflow-hidden cursor-pointer group">
-              <span className="block text-slide">contact</span>
+              <Link
+                to="/"
+                state={{ scrollTo: 'contact' }}
+                className="block text-slide"
+              >
+                contact
+              </Link>
             </li>
           </ul>
         </nav>

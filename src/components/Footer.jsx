@@ -1,13 +1,17 @@
-import { useMediaQuery } from '@mui/material';
 import ArrowOutwardOutlinedIcon from '@mui/icons-material/ArrowOutwardOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import { Link } from 'react-router-dom';
+import { useScroll } from '../contexts/ScrollToContext';
 
 export function Footer() {
-  const isMobile = useMediaQuery('(max-width: 1023px)');
+  const { contactSectionRef } = useScroll();
+
   return (
     <footer className="bg-light-green font-clash text-dark-green px-4 pt-16 lg:px-16 lg:pt-28">
-      <div className="text-dark-green bg-light-green font-clash pb-12 sm:pb-16 lg:pb-20">
+      <div
+        ref={contactSectionRef}
+        className="text-dark-green bg-light-green font-clash pb-12 sm:pb-16 lg:pb-20"
+      >
         <Link
           to="mailto:overby.hikari@gmail.com"
           className="flex items-center justify-between bg-yellow rounded-full cursor-pointer group mx-auto w-fit px-4 py-2 gap-2 sm:px-6 sm:gap-3 lg:px-10 lg:gap-6 lg:py-0"
