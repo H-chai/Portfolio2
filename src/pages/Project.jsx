@@ -102,6 +102,14 @@ export function Project() {
             ) : (
               ''
             )}
+            {project.reflections && project.reflections.length > 0 && (
+              <li>
+                <p className="font-medium mb-1">Reflections and improvements</p>
+                {project.reflections.map((reflection, index) => (
+                  <p key={index}>{reflection}</p>
+                ))}
+              </li>
+            )}
           </ul>
         </div>
         <div className="grid grid-cols-2 gap-5 lg:w-[50%]">

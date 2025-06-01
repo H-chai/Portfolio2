@@ -61,6 +61,7 @@ export const useStore = create((set, get) => ({
       },
       url: 'https://credibid-auction.netlify.app/',
       github: 'https://github.com/H-chai/Auction-semester-project',
+      reflections: ['Move API key to environment variables.'],
       medias: [
         {
           url: '/CrediBid-fullScreen.jpg',
@@ -94,6 +95,11 @@ export const useStore = create((set, get) => ({
       year: '2025',
       url: 'https://reactecom-project.netlify.app/',
       github: 'https://github.com/H-chai/react-ecom',
+      reflections: [
+        'Self-Closing JSX Components.',
+        'Removed console.log() Statements',
+        'Replaced let with const',
+      ],
       medias: [
         {
           url: '/eCom-fullScreen.jpg',
