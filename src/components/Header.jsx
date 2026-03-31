@@ -12,7 +12,10 @@ export function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 flex justify-between items-center px-4 py-6 font-clash text-dark-green z-10 lg:px-16 lg:py-10">
-      <Link to="/" className="relative z-30 font-medium text-lg">
+      <Link
+        to="/"
+        className="relative z-30 font-medium text-lg bg-light-green px-2 py-1 rounded-full"
+      >
         HØ
       </Link>
 
@@ -67,8 +70,8 @@ export function Header() {
 
       {!isMobile && (
         <nav>
-          <ul className="flex items-center gap-10 font-medium text-lg uppercase">
-            <li className="overflow-hidden cursor-pointer group">
+          <ul className="flex items-center gap-6 font-medium text-lg uppercase">
+            <li className="overflow-hidden cursor-pointer group bg-light-green px-2 py-1 rounded-full">
               <Link
                 to="/"
                 state={{ scrollTo: 'projects' }}
@@ -77,7 +80,7 @@ export function Header() {
                 projects
               </Link>
             </li>
-            <li className="overflow-hidden cursor-pointer group">
+            <li className="overflow-hidden cursor-pointer group bg-light-green px-2 py-1 rounded-full">
               <Link
                 to="/"
                 state={{ scrollTo: 'contact' }}
