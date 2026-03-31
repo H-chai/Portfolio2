@@ -89,6 +89,30 @@ export function SelectedProjects() {
             </span>
           </button>
         </Link>
+        <Link
+          to="/project/4"
+          className="px-6 pt-6 pb-24 bg-dark-green rounded-2xl relative group"
+        >
+          <img src="Kidget.png" alt="Kidget thumbnail" />
+          <div className="mt-2 text-light-green">
+            <p className="text-sm">Design/Development</p>
+            <h3 className="text-3xl font-bold my-2">Kidget</h3>
+            <p>
+              Kidget is a mobile-first allowance tracker for kids to manage
+              chores, expenses, and saving goals.
+            </p>
+          </div>
+          <button className="bg-yellow flex items-center pl-4 pr-1.5 py-1.5 gap-1.5 rounded-full cursor-pointer w-fit ml-auto absolute bottom-6 right-6">
+            <span className="overflow-hidden">
+              <span className="text-dark-green font-medium block text-slide">
+                View
+              </span>
+            </span>
+            <span className="w-8 h-8 bg-dark-green flex items-center justify-center rounded-full">
+              <ArrowOutwardOutlinedIcon className="text-yellow !w-5 !h-5" />
+            </span>
+          </button>
+        </Link>
       </div>
     </div>
   );

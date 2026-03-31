@@ -119,6 +119,42 @@ export const useStore = create((set, get) => ({
         },
       ],
     },
+    {
+      id: '4',
+      name: 'Kidget',
+      goal: 'The goal of Kidget is to create a fun and engaging allowance tracker for kids, where children can record chores as income and expenses, track saving goals, ans earn badges and level up - making money management feel like a game.',
+      tags: ['front-end', 'design'],
+      technologies: [
+        'React',
+        'TypeScript',
+        'React Router',
+        'Vite',
+        'Supabase (Auth + PostgreSQL)',
+        'i18next (Internationalization)',
+        'Recharts',
+      ],
+      year: '2026',
+      url: 'https://kidget.netlify.app/',
+      github: 'https://github.com/H-chai/kidget',
+      medias: [
+        {
+          url: '',
+          alt: '',
+        },
+        {
+          url: '',
+          alt: '',
+        },
+        {
+          url: '',
+          alt: '',
+        },
+        {
+          url: '',
+          alt: '',
+        },
+      ],
+    },
   ],
   getProjectById: (id) => {
     const projects = get().projects;
