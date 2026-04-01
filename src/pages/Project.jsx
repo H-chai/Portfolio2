@@ -114,7 +114,7 @@ export function Project() {
         </div>
         <div className="grid grid-cols-2 gap-5 lg:w-[50%]">
           {project.medias?.map((media, index) => (
-            <div key={media.alt} className={`${index < 2 ? 'col-span-2' : ''}`}>
+            <div key={media.alt} className={`${index < 2 && id !== '4' ? 'col-span-2' : ''}`}>
               <img src={media.url} alt={media.alt} className="w-full" />
             </div>
           ))}

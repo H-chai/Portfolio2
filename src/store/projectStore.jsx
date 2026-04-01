@@ -138,20 +138,28 @@ export const useStore = create((set, get) => ({
       github: 'https://github.com/H-chai/kidget',
       medias: [
         {
-          url: '',
-          alt: '',
+          url: '/Kidget-onboard.png',
+          alt: 'Kidget onboarding page (Mobile UI)',
         },
         {
-          url: '',
-          alt: '',
+          url: '/Kidget-setting.png',
+          alt: 'Kidget setting page (Mobile UI)',
         },
         {
-          url: '',
-          alt: '',
+          url: '/Kidget-home.png',
+          alt: 'Kidget home page (Mobile UI)',
         },
         {
-          url: '',
-          alt: '',
+          url: '/Kidget-history.png',
+          alt: 'Kidget history page (Mobile UI)',
+        },
+        {
+          url: '/Kidget-level.png',
+          alt: 'Kidget level page (Mobile UI)',
+        },
+        {
+          url: '/Kidget-expense.png',
+          alt: 'Kidget expense page (Mobile UI)',
         },
       ],
     },
