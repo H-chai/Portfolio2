@@ -121,6 +121,86 @@ export const useStore = create((set, get) => ({
     },
     {
       id: '4',
+      name: 'RIIK',
+      goal: 'Redesigned the RIIK municipal website, contributing to both the UI design and frontend implementation. The project focused on improving responsive design, accessibility, and extending the WordPress CMS for easier content management.',
+      responsibilities: [
+        '- Designed and implemented a new desktop navigation.',
+        '- Refactored CSS and improved responsive layouts across devices.',
+        '- Built WordPress CMS functionality for managing employee profiles.',
+        '- Implemented category-based rendering to display employees in different sections automatically.',
+        '- Improved accessibility following Universal Design (Universell utforming / WCAG) principles.',
+      ],
+      results: [
+        '- Eliminated hard-coded employee data by introducing a CMS-driven workflow.',
+        '- Enabled administrators to manage employee information without developer support.',
+        '- Improved mobile usability and overall maintainability of the website.',
+      ],
+      tags: ['front-end', 'Wordpress', 'design'],
+      technologies: ['WordPress', 'PHP', 'JavaScript', 'HTML', 'CSS'],
+      year: '2026',
+      url: 'https://www.riik.no/',
+      medias: [
+        {
+          url: '/Riik-overview.png',
+          alt: 'Overview of the RIIK website showing key desktop pages and layouts.',
+        },
+        {
+          url: '/Riik-responsive-1.png',
+          alt: 'RIIK mobile interface showing the homepage and navigation menu',
+        },
+        {
+          url: '/Riik-responsive-2.png',
+          alt: 'RIIK tablet interface and WordPress CMS for managing employee profiles.',
+        },
+      ],
+    },
+    {
+      id: '5',
+      name: 'Indigo IKT',
+      goal: 'Redesigned the Indigo IKT corporate website, taking responsibility for both the UI design and frontend implementation. The project focused on improving accessibility, responsive design, and establishing a reusable Design System. This Design System serves as the foundation for future company websites and related digital products, ensuring a consistent user experience and visual identity.',
+      responsibilities: [
+        '- Redesigned the corporate website to provide a more modern and user-friendly experience.',
+        '- Improved responsive layouts to ensure usability across desktop, tablet, and mobile devices.',
+        '- Enhanced accessibility following Universal Design (Universell utforming / WCAG) principles.',
+        '- Designed and documented a reusable Design System, including colors, typography, spacing, navigation, forms, tables, cards, and other core UI components.',
+        "- Rebuilt the company's Grafisk Profil page from scratch to provide a centralized brand guideline for internal teams.",
+        '- Implemented interactive color palettes using JavaScript, allowing users to copy HEX color codes with a single click.',
+      ],
+      results: [
+        '- Established a scalable Design System that serves as the foundation for future company websites and related digital products.',
+        '- Improved consistency across the user interface by standardizing reusable design components.',
+        '- Made brand assets easier for designers and developers to reference through an interactive brand guideline page.',
+        '- Improved accessibility and responsive usability across the entire website.',
+      ],
+      tags: ['front-end', 'Wordpress', 'UI/UX'],
+      technologies: ['WordPress', 'PHP', 'JavaScript', 'HTML', 'CSS', 'Figma'],
+      year: '2026',
+      url: 'https://www.indigo-ikt.no/',
+      medias: [
+        {
+          url: '/Indigo-overview.png',
+          alt: 'Overview of the Indigo website showing key pages and interface designs.',
+        },
+        {
+          url: '/Indigo-responsive-1.png',
+          alt: 'Indigo mobile interface showing the homepage and navigation menu.',
+        },
+        {
+          url: '/Indigo-responsive-2.png',
+          alt: 'Indigo tablet interfaces showing the company overview and brand color palette.',
+        },
+        {
+          url: '/Indigo-DesignSystem-1.png',
+          alt: 'Indigo design system showing reusable UI components and interface elements.',
+        },
+        {
+          url: '/Indigo-DesignSystem-2.png',
+          alt: 'Responsive form component examples from the Indigo design system.',
+        },
+      ],
+    },
+    {
+      id: '6',
       name: 'Kidget',
       goal: 'The goal of Kidget is to create a fun and engaging allowance tracker for kids, where children can record chores as income and expenses, track saving goals, ans earn badges and level up - making money management feel like a game.',
       tags: ['front-end', 'design'],

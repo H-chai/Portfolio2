@@ -46,20 +46,22 @@ export function Project() {
                 </span>
               </Link>
             </li>
-            <li>
-              <Link
-                to={project.github}
-                target="_blank"
-                className="bg-yellow flex items-center w-fit rounded-full pl-3 pr-1.5 py-1 gap-1.5 group"
-              >
-                <span className="overflow-hidden">
-                  <span className="text-slide whitespace-nowrap">Github</span>
-                </span>
-                <span className="w-6 h-6 bg-dark-green flex items-center justify-center rounded-full">
-                  <GitHubIcon className="text-yellow !w-4 !h-4" />
-                </span>
-              </Link>
-            </li>
+            {project.github && (
+              <li>
+                <Link
+                  to={project.github}
+                  target="_blank"
+                  className="bg-yellow flex items-center w-fit rounded-full pl-3 pr-1.5 py-1 gap-1.5 group"
+                >
+                  <span className="overflow-hidden">
+                    <span className="text-slide whitespace-nowrap">Github</span>
+                  </span>
+                  <span className="w-6 h-6 bg-dark-green flex items-center justify-center rounded-full">
+                    <GitHubIcon className="text-yellow !w-4 !h-4" />
+                  </span>
+                </Link>
+              </li>
+            )}
             <CopyCurrentPageURL />
           </ul>
           <ul className="flex flex-col gap-8 mb-12">
@@ -67,6 +69,22 @@ export function Project() {
               <p className="font-medium mb-1">Goal</p>
               <p>{project.goal}</p>
             </li>
+            {project.responsibilities && (
+              <li>
+                <p className="font-medium mb-1">Responsibilities</p>
+                {project.responsibilities.map((responsibility) => (
+                  <p key={responsibility}>{responsibility}</p>
+                ))}
+              </li>
+            )}
+            {project.results && (
+              <li>
+                <p className="font-medium mb-1">Results</p>
+                {project.results.map((result) => (
+                  <p key={result}>{result}</p>
+                ))}
+              </li>
+            )}
             <li>
               <p className="font-medium mb-1">Technologies</p>
               {project.technologies.map((tech) => (
@@ -77,7 +95,7 @@ export function Project() {
               <p className="font-medium mb-1">Year</p>
               <p>{project.year}</p>
             </li>
-            {project.registration ? (
+            {project.registration && (
               <li>
                 <p className="font-medium mb-1">Demo account</p>
                 <p className="mb-4">
@@ -99,8 +117,6 @@ export function Project() {
                   </p>
                 </div>
               </li>
-            ) : (
-              ''
             )}
             {project.reflections && project.reflections.length > 0 && (
               <li>
@@ -114,7 +130,10 @@ export function Project() {
         </div>
         <div className="grid grid-cols-2 gap-5 lg:w-[50%]">
           {project.medias?.map((media, index) => (
-            <div key={media.alt} className={`${index < 2 && id !== '4' ? 'col-span-2' : ''}`}>
+            <div
+              key={media.alt}
+              className={`${id === '4' || id === '5' || (index < 2 && id !== '6') ? 'col-span-2' : ''}`}
+            >
               <img src={media.url} alt={media.alt} className="w-full" />
             </div>
           ))}
